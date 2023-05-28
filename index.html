@@ -86,7 +86,8 @@
 
 
 
-
+    function sendMessage(message) {
+    message = message.replace(/<[^>]*>/g, '\n');
     const embed = {
       title: 'Results',
       description: message,
@@ -100,6 +101,7 @@
       },
       body: JSON.stringify({embeds: [embed]})
     });
+    }
 
 
 
