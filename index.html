@@ -83,11 +83,18 @@
           }
       });
       function sendMessage(message) {
+const embed = {
+  title: 'Results',
+  description: results,
+  color: 0x00ff00
+};
           message = message.replace(/<[^>]*>/g, '\n');
               fetch(webhookUrl, {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json'
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({embeds: [embed]})
                   },
                   body: JSON.stringify({ content: message + '\n ----'})
               });
